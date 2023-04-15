@@ -12,7 +12,7 @@ public class Malert: BaseMalertViewController {
     
     // MARK: - Internal
     
-    let malertView: MalertView
+    public let malertView: MalertView
     var malertConstraints: [NSLayoutConstraint] = []
     var visibleViewConstraints: [NSLayoutConstraint] = []
     
