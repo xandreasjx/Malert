@@ -1,21 +1,26 @@
-// swift-tools-version:5.7.1
+// swift-tools-version:5.3
 import PackageDescription
 
 let package = Package(
     name: "Malert",
     platforms: [
-        .iOS(.v10)
+        .iOS(.v11)
     ],
     products: [
         .library(
             name: "Malert",
-            targets: ["Malert"]
-        ),
+            targets: ["Malert"]),
+    ],
+    dependencies: [
     ],
     targets: [
         .target(
             name: "Malert",
-            path: "Malert"
+            dependencies: [],
+            path: "Malert/Classes",
+            resources: [
+                .process("Malert/Assets")
+            ]
         )
     ],
     swiftLanguageVersions: [.v5]
